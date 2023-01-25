@@ -94,3 +94,57 @@ slogan {
   bottom: 0;
   width: 100%;
 }
+
+/* Logbook.php */
+
+.vacationSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heroImg {
+  height: 200px;
+}
+
+.vacationCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.vacationCard {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid;
+}
+
+.headlineBig {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+
+.headlineSmall {
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+}
+
+.vacationCard p {
+  font-size: 15px;
+}
+
+.vacationFactBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  border: 1px solid;
+}
