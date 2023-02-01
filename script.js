@@ -10,13 +10,13 @@ const roomImage = [
   'images/room2.jpeg',
   'images/room3.jpeg',
 ];
-// roomTag: r1=room1 r2=room2 r3=room3
-const roomTag = ['r1', 'r2', 'r3'];
+const roomTag = ['room1', 'room2', 'room3'];
+
 // reset text, image and calendar for first room
 let header = document.querySelector('h3');
 let img = document.querySelector("img[src='images/room1.jpeg']");
 const calendarElement = document.getElementsByTagName('td');
-const calendarTable = document.getElementsByClassName('r1');
+const calendarTable = document.getElementsByClassName('room1');
 for (let i = 0; i < calendarTable.length; i++) {
   calendarTable[i].style.backgroundColor = 'yellowgreen';
 }

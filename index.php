@@ -19,7 +19,6 @@ require __DIR__ . '/header.php';
      <p>Yahoos are legendary beings in the 1726 satirical novel Gulliver's Travels written by Jonathan Swift. The word "yahoo" was coined by Jonathan Swift in the fourth section of Gulliver's Travels and has since entered the English language more broadly. The Yahoo Hotel is the one and only on Gooh-Gooh Island nicely located in the Yrgopelago. Hotel Yahoo has no connection to <a href="https://sv.wikipedia.org/wiki/Sexbranschen">the sex industry</a>, but we do offer API therapy as an extra feature. We save all your bookings in our database so there is no double booking, but our calendar is not built with PHP. It is a fake mock calendar that uses JavaScript. Therefore Hotel Yahoo has only a two star rating instead of three.</p>
 
      <!-- calendar -->
-     <!-- r1=room1 r2=room2 r3=room3  -->
      <div class="calendar">
           <h3>Cheap room Closer to Nature (4$) -></h3>
           <img width="350" height="350" alt="room1" src="images/room1.jpeg">
@@ -41,47 +40,47 @@ require __DIR__ . '/header.php';
                          <td></td>
                          <td></td>
                          <td></td>
-                         <td class="r1 r2">1</td>
+                         <td class="room1 room2">1</td>
                     </tr>
                     <tr>
-                         <td class="r1 r3">2</td>
-                         <td class="r2 r3">3</td>
-                         <td class="r2 r3">4</td>
-                         <td class="r2 r3">5</td>
-                         <td class="r1 r3">6</td>
-                         <td class="r1 r3">7</td>
-                         <td class="r1 r2">8</td>
+                         <td class="room1 room3">2</td>
+                         <td class="room2 room3">3</td>
+                         <td class="room2 room3">4</td>
+                         <td class="room2 room3">5</td>
+                         <td class="room1 room3">6</td>
+                         <td class="room1 room3">7</td>
+                         <td class="room1 room2">8</td>
                     </tr>
                     <tr>
-                         <td class="r3">9</td>
-                         <td class="r2">10</td>
-                         <td class="r2">11</td>
-                         <td class="r1">12</td>
-                         <td class="r2">13</td>
-                         <td class="r2">14</td>
-                         <td class="r2">15</td>
+                         <td class="room3">9</td>
+                         <td class="room2">10</td>
+                         <td class="room2">11</td>
+                         <td class="room1">12</td>
+                         <td class="room2">13</td>
+                         <td class="room2">14</td>
+                         <td class="room2">15</td>
                     </tr>
                     <tr>
-                         <td class="r2">16</td>
-                         <td class="r1">17</td>
-                         <td class="r3">18</td>
-                         <td class="r3">19</td>
-                         <td class="r3">20</td>
-                         <td class="r3">21</td>
-                         <td class="r3">22</td>
+                         <td class="room2">16</td>
+                         <td class="room1">17</td>
+                         <td class="room3">18</td>
+                         <td class="room3">19</td>
+                         <td class="room3">20</td>
+                         <td class="room3">21</td>
+                         <td class="room3">22</td>
                     </tr>
                     <tr>
-                         <td class="r1">23</td>
-                         <td class="r1">24</td>
-                         <td class="r1">25</td>
-                         <td class="r1">26</td>
-                         <td class="r1">27</td>
-                         <td class="r1">28</td>
-                         <td class="r1 r3">29</td>
+                         <td class="room1">23</td>
+                         <td class="room1">24</td>
+                         <td class="room1">25</td>
+                         <td class="room1">26</td>
+                         <td class="room1">27</td>
+                         <td class="room1">28</td>
+                         <td class="room1 room3">29</td>
                     </tr>
                     <tr>
-                         <td class="r1 r2">30</td>
-                         <td class="r1 r2">31</td>
+                         <td class="room1 room2">30</td>
+                         <td class="room1 room2">31</td>
                          <td></td>
                          <td></td>
                          <td></td>
