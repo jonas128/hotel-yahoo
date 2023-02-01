@@ -1,6 +1,28 @@
-// let button = document.querySelector('button');
-let button = document.querySelector('light');
+// reset room constants
+let roomIndex = 0;
+const roomText = [
+  'Cheap room Closer to Nature (4$) ->',
+  'The Old B(o)y Standard room (5$) ->',
+  'Yahoo Delux-API double room (6$) ->',
+];
+const roomImage = [
+  'images/room1.jpeg',
+  'images/room2.jpeg',
+  'images/room3.jpeg',
+];
+// roomTag: r1=room1 r2=room2 r3=room3
+const roomTag = ['r1', 'r2', 'r3'];
+// reset text, image and calendar for first room
+let header = document.querySelector('h3');
+let img = document.querySelector("img[src='images/room1.jpeg']");
+const calendarElement = document.getElementsByTagName('td');
+const calendarTable = document.getElementsByClassName('r1');
+for (let i = 0; i < calendarTable.length; i++) {
+  calendarTable[i].style.backgroundColor = 'yellowgreen';
+}
 
+// hotel light switch button
+let button = document.querySelector('light');
 light.addEventListener('click', () => {
   if (document.body.style.backgroundColor == 'black') {
     document.body.style.backgroundColor = 'white';
@@ -9,24 +31,7 @@ light.addEventListener('click', () => {
   }
 });
 
-let roomIndex = 0;
-const roomText = [
-  'Cheap room Closer to Nature (4$) ->',
-  'The Old B(o)y Standard room (5$) ->',
-  'Yahoo Delux-API double room (6$) ->',
-];
-const roomImg = ['images/room1.jpeg', 'images/room2.jpeg', 'images/room3.jpeg'];
-const roomTag = ['r1', 'r2', 'r3'];
-
-let header = document.querySelector('h3');
-let img = document.querySelector("img[src='images/room1.jpeg']");
-// const td = document.querySelector('td');
-const reset = document.getElementsByTagName('td');
-const collection = document.getElementsByClassName('r1');
-for (let i = 0; i < collection.length; i++) {
-  collection[i].style.backgroundColor = 'yellowgreen';
-}
-
+// change room script
 newroom.addEventListener('click', () => {
   roomIndex++;
 
@@ -34,28 +39,18 @@ newroom.addEventListener('click', () => {
   $select.value = roomIndex + 1;
 
   header.innerText = roomText[roomIndex];
-  img.src = roomImg[roomIndex];
+  img.src = roomImage[roomIndex];
 
-  // td.style.backgroundColor = 'white';
-
-  for (let i = 0; i < reset.length; i++) {
-    reset[i].style.backgroundColor = 'white';
+  for (let i = 0; i < calendarElement.length; i++) {
+    calendarElement[i].style.backgroundColor = 'white';
   }
 
-  let collection = document.getElementsByClassName(roomTag[roomIndex]);
-  for (let i = 0; i < collection.length; i++) {
-    collection[i].style.backgroundColor = 'yellowgreen';
+  let calendarTable = document.getElementsByClassName(roomTag[roomIndex]);
+  for (let i = 0; i < calendarTable.length; i++) {
+    calendarTable[i].style.backgroundColor = 'yellowgreen';
   }
 
   if (roomIndex == 2) {
     roomIndex = -1;
   }
 });
-
-let rr = document.getElementById('rr');
-rr.style.backgroundColor = 'red';
-
-// const collection = document.getElementsByClassName('r2');
-// for (let i = 0; i < collection.length; i++) {
-//   collection[i].style.backgroundColor = 'green';
-// }

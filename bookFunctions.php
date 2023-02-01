@@ -26,9 +26,6 @@ function checkRoomAvailability(object $hotelDb, string $roomNumber, string $arri
           return $bookings;
 }
 
-//GUZZLE transfercode block
-
-
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 

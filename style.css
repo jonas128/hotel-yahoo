@@ -58,16 +58,6 @@ td {
   background-color: whitesmoke;
 }
 
-.g {
-  background: green;
-}
-.y {
-  background: yellowgreen;
-}
-.r {
-  background: red;
-}
-
 form {
   display: flex;
   align-items: center;
@@ -80,15 +70,9 @@ button {
   width: 200px;
   height: 50px;
   border-radius: 10px;
-
-  /* display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center; */
 }
 
 slogan {
-  /* position: fixed; */
   display: flex;
   justify-content: center;
   bottom: 0;
